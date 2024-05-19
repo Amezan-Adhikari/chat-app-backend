@@ -13,7 +13,7 @@ app.use(express.json());
 
 let server;
 
-let PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 10000;
 
 connectTodb((err) => {
   if (!err) {
