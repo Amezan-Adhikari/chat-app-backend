@@ -3,6 +3,7 @@ const { getToken, verifyToken } = require("./jwt");
 const { connectTodb, getDb } = require("./dbconnection");
 const bcrypt = require("bcrypt");
 const cors = require("cors");
+const bodyParser = require('body-parser');
 const app = express();
 const {Server}=require('socket.io');
 let db;
@@ -10,6 +11,8 @@ let db;
 app.use(cors());
 
 app.use(express.json());
+
+app.use(bodyParser.json());
 
 let server;
 
