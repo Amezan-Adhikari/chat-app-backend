@@ -18,6 +18,7 @@ let server;
 
 const PORT = process.env.PORT || 10000;
 
+console.log("working")
 connectTodb((err) => {
   if (!err) {
       server = app.listen(PORT, () => {
