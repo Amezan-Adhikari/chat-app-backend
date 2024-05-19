@@ -11,7 +11,7 @@ app.use(cors());
 
 app.use(express.json());
 let server;
-let PORT = process.env.PORT || 3000;
+let PORT = process.env.PORT || 8080;
 
 connectTodb((err) => {
   if (!err) {
